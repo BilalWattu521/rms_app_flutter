@@ -19,7 +19,7 @@ class ManageOrdersPage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Manage Menu'),
+          title: const Text('Manage Orders'),
           centerTitle: true,
           titleTextStyle: const TextStyle(
             fontSize: 35,
