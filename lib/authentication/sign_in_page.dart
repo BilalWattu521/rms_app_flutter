@@ -133,7 +133,7 @@ Future<void> _signInWithGoogle() async {
                   child: Container(
                     padding: const EdgeInsets.all(20.0),
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.9),
+                      color: Colors.white.withAlpha(230), // Equivalent to 0.9 opacity
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Column(
