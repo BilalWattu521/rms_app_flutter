@@ -11,13 +11,15 @@ import 'package:rms_project/user_panel/user_page.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
+  await dotenv.load(fileName: ".env");
+
   // Initialize Firebase
   await Firebase.initializeApp(
     options: FirebaseOptions(
-      apiKey: dotenv.env['APIKey'] ?? '',
-      appId: dotenv.env['appId'] ?? '',
-      messagingSenderId: dotenv.env['messagingSenderId'] ?? '',
-      projectId: dotenv.env['projectId'] ?? '',
+      apiKey: dotenv.env["APIKey"]!,
+      appId: dotenv.env["appId"]!,
+      messagingSenderId: dotenv.env["messagingSenderId"]!,
+      projectId: dotenv.env["projectId"]!,
     ),
   );
 
