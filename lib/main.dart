@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:provider/provider.dart';
 import 'package:rms_project/cart/cart_provider.dart';
 import 'package:rms_project/cart/cart_page.dart';
@@ -12,11 +13,11 @@ void main() async {
 
   // Initialize Firebase
   await Firebase.initializeApp(
-    options: const FirebaseOptions(
-      apiKey: "AIzaSyDFxSrrb6aEUA4yBxB2tlDTTyWqwyo1JSQ",
-      appId: "1:397476096064:android:7f89106ef3dfa0d28697a5",
-      messagingSenderId: "397476096064",
-      projectId: "rms-project-9eaab",
+    options: FirebaseOptions(
+      apiKey: dotenv.env['APIKey'] ?? '',
+      appId: dotenv.env['appId'] ?? '',
+      messagingSenderId: dotenv.env['messagingSenderId'] ?? '',
+      projectId: dotenv.env['projectId'] ?? '',
     ),
   );
 

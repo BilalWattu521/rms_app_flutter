@@ -34,6 +34,9 @@ migrate_working_dir/
 # Symbolication related
 app.*.symbols
 
+#env
+.env
+
 # Obfuscation related
 app.*.map.json
 
@@ -41,3 +44,4 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+/abdroid/google-services.json
