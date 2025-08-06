@@ -2,7 +2,7 @@
   "project_info": {
     "project_number": "397476096064",
     "project_id": "rms-project-9eaab",
-    "storage_bucket": "rms-project-9eaab.appspot.com"
+    "storage_bucket": "rms-project-9eaab.firebasestorage.app"
   },
   "client": [
     {
@@ -14,11 +14,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "397476096064-laro9u3ahemustpk59g8u8qg5u98tp96.apps.googleusercontent.com",
+          "client_id": "397476096064-5ro5j6dnm5ciqm82782o8svdpn55ngsh.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.rms_project",
-            "certificate_hash": "d1abc70c38f5ffb0b6c02915baa805d81c6f816f"
+            "certificate_hash": "61435096238b188fbb4e0ce5232826983c9746a7"
           }
         },
         {
